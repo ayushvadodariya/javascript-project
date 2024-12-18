@@ -1,0 +1,91 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 400px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.converter-section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+label {
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #dcdcdc;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+.radio-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.radio-group label {
+    font-size: 14px;
+    color: #7f8c8d;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.convert-btn {
+    width: 100%;
+    padding: 12px 0;
+    background: #2c3e50;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.convert-btn:hover {
+    background: #34495e;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2980b9;
+    text-align: center;
+    white-space: pre-line;
+}
+
