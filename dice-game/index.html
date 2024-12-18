@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Player Dice Game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>🎲 Two Player Dice Game 🎲</h1>
+        
+        <div class="player-selection">
+            <label class="player-label">
+                <input type="radio" id="player1" name="player" value="player1" checked>
+                <span>Player 1</span>
+            </label>
+            <label class="player-label">
+                <input type="radio" id="player2" name="player" value="player2">
+                <span>Player 2</span>
+            </label>
+        </div>
+        
+        <button class="roll-btn" onclick="rollDice()">Roll the Dice</button>
+        
+        <div class="dice-results">
+            <p>Player 1 Roll: <span id="player1Dice">0</span></p>
+            <p>Player 2 Roll: <span id="player2Dice">0</span></p>
+        </div>
+        
+        <div id="winner" class="winner-message"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

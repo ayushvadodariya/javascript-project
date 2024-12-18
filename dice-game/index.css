@@ -1,0 +1,100 @@
+/* Global Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #f1f1f1;
+}
+
+/* Game Container */
+.game-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    padding: 20px 30px;
+    text-align: center;
+    width: 320px;
+}
+
+/* Header Styling */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Player Selection */
+.player-selection {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.player-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.player-label span {
+    color: #f1f1f1;
+    font-size: 16px;
+}
+
+input[type="radio"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="radio"]:checked {
+    background-color: #ffffff;
+}
+
+/* Roll Button */
+.roll-btn {
+    background: linear-gradient(45deg, #1cb5e0, #000851);
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.roll-btn:hover {
+    background: linear-gradient(45deg, #000851, #1cb5e0);
+    transform: scale(1.05);
+}
+
+/* Dice Results */
+.dice-results {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.dice-results p {
+    margin: 10px 0;
+}
+
+/* Winner Message */
+.winner-message {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffeb3b;
+}
